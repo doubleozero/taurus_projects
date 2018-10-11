@@ -1,0 +1,48 @@
+---
+execution:
+- concurrency: 10
+  files:
+  - Numbers.csv
+  hold-for: 1m
+  locations:
+    us-east-1: 1
+  ramp-up: 60s
+  scenario: blazedemo
+local-bzt-version: 1.11.1
+modules:
+  cloud:
+    account: DoubleOZero
+    send-report-email: false
+    workspace: James's workspace
+  gatling:
+    properties:
+      gatling.data.file.bufferSize: 256
+  grinder:
+    properties:
+      grinder.useConsole: false
+  jmeter:
+    properties:
+      jmeter.save.saveservice.autoflush: 'true'
+      jmeter.save.saveservice.connect_time: 'true'
+      jmeterengine.force.system.exit: 'true'
+      summariser.name: ''
+scenarios:
+  blazedemo:
+    requests:
+    - label: blazedemo
+      method: GET
+      url: http://blazedemo.com/
+services:
+- local:
+  - metrics:
+    - cpu
+    - mem
+    - bytes-sent
+    - bytes-recv
+    - disk-read
+    - disk-write
+    - disk-space
+    - engine-loop
+    - conn-all
+  module: monitoring
+

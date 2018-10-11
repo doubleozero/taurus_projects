@@ -1,0 +1,36 @@
+{
+ "scenarios": {
+  "blazedemo": {
+   "requests": [
+    {
+     "url": "http://blazedemo.com/", 
+     "method": "GET", 
+     "label": "blazedemo"
+    }
+   ]
+  }
+ }, 
+ "execution": [
+  {
+   "files": [
+    "/Users/myComp/Downloads/Numbers.csv"
+   ], 
+   "scenario": "blazedemo", 
+   "ramp-up": "60s", 
+   "locations": {
+    "us-east-1": 1
+   }, 
+   "concurrency": 10, 
+   "hold-for": "1m"
+  }
+ ], 
+ "modules": {
+  "blazemeter": {
+   "token": "********"
+  }, 
+  "cloud": {
+   "test": "What did you see? A Lemur?", 
+   "token": "********"
+  }
+ }
+}

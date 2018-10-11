@@ -1,0 +1,54 @@
+{
+ "scenarios": {
+  "advanced-script": {
+   "requests": [
+    {
+     "url": "http://blazedemo.com", 
+     "label": "Welcome Page"
+    }, 
+    {
+     "url": "http://blazedemo.com/register", 
+     "label": "Register"
+    }
+   ], 
+   "data-sources": [
+    {
+     "path": "stuff.csv", 
+     "delimiter": ","
+    }
+   ]
+  }
+ }, 
+ "execution": [
+  {
+   "scenario": "advanced-script", 
+   "ramp-up": "60s", 
+   "locations": {
+    "harbor-5a5fb85ce2d233ae0c7b2464": 1
+   }, 
+   "concurrency": 30, 
+   "executor": "jmeter", 
+   "hold-for": "1m"
+  }
+ ], 
+ "modules": {
+  "blazemeter": {
+   "token": "********"
+  }, 
+  "cloud": {
+   "project": "Test The Thing", 
+   "account": "DoubleOZero", 
+   "workspace": "James's workspace", 
+   "send-report-email": false
+  }
+ }, 
+ "reporting": [
+  {
+   "module": "passfail", 
+   "criteria": [
+    "avg-rt > 50ms for 10s, stop as failed"
+   ]
+  }
+ ], 
+ "provisioning": "cloud"
+}

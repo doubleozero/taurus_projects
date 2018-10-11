@@ -1,0 +1,40 @@
+{
+ "scenarios": {
+  "basic-script": {
+   "requests": [
+    {
+     "url": "http://blazedemo.com", 
+     "label": "Welcome Page"
+    }, 
+    {
+     "url": "http://blazedemo.com/register", 
+     "label": "Register"
+    }
+   ]
+  }
+ }, 
+ "execution": [
+  {
+   "scenario": "basic-script", 
+   "ramp-up": "60s", 
+   "locations": {
+    "us-east-1": 1
+   }, 
+   "concurrency": 20, 
+   "executor": "jmeter", 
+   "hold-for": "1m"
+  }
+ ], 
+ "modules": {
+  "blazemeter": {
+   "token": "********"
+  }, 
+  "cloud": {
+   "project": "Test The Thing", 
+   "account": "DoubleOZero", 
+   "workspace": "DoubleOZero", 
+   "send-report-email": false
+  }
+ }, 
+ "provisioning": "cloud"
+}

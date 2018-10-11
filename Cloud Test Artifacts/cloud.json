@@ -1,0 +1,74 @@
+{
+ "local-bzt-version": "1.11.1", 
+ "scenarios": {
+  "basic-script": {
+   "requests": [
+    {
+     "url": "http://blazedemo.com", 
+     "label": "Welcome Page"
+    }, 
+    {
+     "url": "http://blazedemo.com/register", 
+     "label": "Register"
+    }
+   ]
+  }
+ }, 
+ "execution": [
+  {
+   "scenario": "basic-script", 
+   "ramp-up": "60s", 
+   "locations": {
+    "us-east-1": 1
+   }, 
+   "concurrency": 20, 
+   "executor": "jmeter", 
+   "hold-for": "1m"
+  }
+ ], 
+ "modules": {
+  "jmeter": {
+   "properties": {
+    "jmeter.save.saveservice.autoflush": "true", 
+    "jmeter.save.saveservice.connect_time": "true", 
+    "summariser.name": "", 
+    "jmeterengine.force.system.exit": "true"
+   }
+  }, 
+  "gatling": {
+   "properties": {
+    "gatling.data.file.bufferSize": 256
+   }
+  }, 
+  "grinder": {
+   "properties": {
+    "grinder.useConsole": false
+   }
+  }, 
+  "cloud": {
+   "account": "DoubleOZero", 
+   "workspace": "DoubleOZero", 
+   "send-report-email": false
+  }
+ }, 
+ "services": [
+  {
+   "local": [
+    {
+     "metrics": [
+      "cpu", 
+      "mem", 
+      "bytes-sent", 
+      "bytes-recv", 
+      "disk-read", 
+      "disk-write", 
+      "disk-space", 
+      "engine-loop", 
+      "conn-all"
+     ]
+    }
+   ], 
+   "module": "monitoring"
+  }
+ ]
+}

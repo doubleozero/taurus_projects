@@ -1,0 +1,33 @@
+---
+execution:
+- concurrency: 30
+  executor: jmeter
+  hold-for: 1m
+  locations:
+    harbor-5a5fb85ce2d233ae0c7b2464: 1
+  ramp-up: 60s
+  scenario: advanced-script
+modules:
+  blazemeter:
+    token: '********'
+  cloud:
+    account: DoubleOZero
+    project: Test The Thing
+    send-report-email: false
+    workspace: James's workspace
+provisioning: cloud
+reporting:
+- criteria:
+  - avg-rt > 50ms for 10s, stop as failed
+  module: passfail
+scenarios:
+  advanced-script:
+    data-sources:
+    - delimiter: ','
+      path: stuff.csv
+    requests:
+    - label: Welcome Page
+      url: http://blazedemo.com
+    - label: Register
+      url: http://blazedemo.com/register
+

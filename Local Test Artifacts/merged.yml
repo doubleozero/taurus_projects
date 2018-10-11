@@ -1,0 +1,18 @@
+---
+execution:
+- concurrency: 20
+  executor: jmeter
+  hold-for: 1m
+  ramp-up: 60s
+  scenario: basic-script
+modules:
+  blazemeter:
+    token: '********'
+scenarios:
+  basic-script:
+    requests:
+    - label: Welcome Page
+      url: http://blazedemo.com
+    - label: Register
+      url: http://blazedemo.com/register
+

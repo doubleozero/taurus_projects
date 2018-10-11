@@ -1,0 +1,33 @@
+execution:
+- executor: jmeter
+  concurrency: 30
+  ramp-up: 60s
+  hold-for: 1m
+  scenario: advanced-script
+  locations: 
+    harbor-5a5fb85ce2d233ae0c7b2464: 1
+
+provisioning: cloud
+
+modules:
+  cloud:
+    account: DoubleOZero
+    send-report-email: false
+    project: Test The Thing
+    workspace: James's workspace
+
+reporting:
+- module: passfail
+  criteria:
+  - avg-rt > 50ms for 10s, stop as failed
+
+scenarios:
+  advanced-script:
+    data-sources:
+    - path: stuff.csv                    #instructions don't say how this CSV is to be used?
+      delimiter: ","
+    requests:
+    - url: http://blazedemo.com          #defaults to GET when no method is specified
+      label: Welcome Page
+    - url: http://blazedemo.com/register
+      label: Register

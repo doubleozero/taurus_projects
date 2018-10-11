@@ -1,0 +1,26 @@
+execution:
+- executor: jmeter
+  concurrency: 20
+  ramp-up: 60s
+  hold-for: 1m
+  scenario: basic-script
+  locations: 
+    us-east-1: 1
+
+provisioning: cloud
+
+modules:
+  cloud:
+    account: DoubleOZero
+    send-report-email: false
+    project: Test The Thing
+    workspace: DoubleOZero
+
+scenarios:
+  basic-script:
+    requests:
+    - url: http://blazedemo.com          #defaults to GET when no method is specified
+      label: Welcome Page
+    - url: http://blazedemo.com/register
+      label: Register
+    #"bzt basic_script.yml -report": https://a.blazemeter.com/app/#/accounts/182891/workspaces/202422/projects/263546/masters/18082962/summary

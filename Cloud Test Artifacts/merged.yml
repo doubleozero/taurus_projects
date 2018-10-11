@@ -1,0 +1,26 @@
+---
+execution:
+- concurrency: 20
+  executor: jmeter
+  hold-for: 1m
+  locations:
+    us-east-1: 1
+  ramp-up: 60s
+  scenario: basic-script
+modules:
+  blazemeter:
+    token: '********'
+  cloud:
+    account: DoubleOZero
+    project: Test The Thing
+    send-report-email: false
+    workspace: DoubleOZero
+provisioning: cloud
+scenarios:
+  basic-script:
+    requests:
+    - label: Welcome Page
+      url: http://blazedemo.com
+    - label: Register
+      url: http://blazedemo.com/register
+

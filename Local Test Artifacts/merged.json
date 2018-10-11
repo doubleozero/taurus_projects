@@ -1,0 +1,30 @@
+{
+ "scenarios": {
+  "basic-script": {
+   "requests": [
+    {
+     "url": "http://blazedemo.com", 
+     "label": "Welcome Page"
+    }, 
+    {
+     "url": "http://blazedemo.com/register", 
+     "label": "Register"
+    }
+   ]
+  }
+ }, 
+ "execution": [
+  {
+   "scenario": "basic-script", 
+   "ramp-up": "60s", 
+   "hold-for": "1m", 
+   "concurrency": 20, 
+   "executor": "jmeter"
+  }
+ ], 
+ "modules": {
+  "blazemeter": {
+   "token": "********"
+  }
+ }
+}

@@ -1,0 +1,28 @@
+     
+execution:
+- scenario: blazedemo
+  concurrency: 10
+  hold-for: 1m
+  files: 
+  - Numbers.csv
+  ramp-up: 60s
+  locations:
+    us-east-1: 1
+
+provisioning: cloud
+
+modules:
+  cloud:
+    account: DoubleOZero
+    send-report-email: false
+    project: Test The Thing
+    workspace: James's workspace
+    test: What did you see? A Lemur?
+  
+scenarios:
+  blazedemo:
+    requests:
+    - label: blazedemo
+      method: GET
+      url: http://blazedemo.com/  
+

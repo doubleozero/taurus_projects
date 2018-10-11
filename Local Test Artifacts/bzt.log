@@ -1,0 +1,184 @@
+[2018-08-14 15:26:32,749 INFO root] Taurus CLI Tool v1.11.1
+[2018-08-14 15:26:32,749 DEBUG root] Command-line options: {'verbose': None, 'no_system_configs': None, 'quiet': None, 'log': '/var/folders/v3/yp_zdc392qq1bxx6gs3_pvj9cgtsbx/T/bzt_Arep4F.log', 'option': None, 'aliases': []}
+[2018-08-14 15:26:32,749 DEBUG root] Python: CPython 2.7.15
+[2018-08-14 15:26:32,749 DEBUG root] OS: ('Darwin', 'panja09mac131', '17.7.0', 'Darwin Kernel Version 17.7.0: Thu Jun 21 22:53:14 PDT 2018; root:xnu-4570.71.2~1/RELEASE_X86_64', 'x86_64', 'i386')
+[2018-08-14 15:26:32,750 INFO root] Starting with configs: ['basic_script.yml']
+[2018-08-14 15:26:32,750 DEBUG root] Using personal config: /Users/panja09/.bzt-rc
+[2018-08-14 15:26:32,750 INFO Engine] Configuring...
+[2018-08-14 15:26:32,750 DEBUG Engine] No machine configs dir: /usr/local/Cellar/bzt/1.11.1/libexec/bin/../etc/bzt.d
+[2018-08-14 15:26:32,750 DEBUG Engine] Base configs list: ['/usr/local/Cellar/bzt/1.11.1/libexec/lib/python2.7/site-packages/bzt/resources/base-config.yml']
+[2018-08-14 15:26:32,750 DEBUG Engine.Configuration] Configs: ['/usr/local/Cellar/bzt/1.11.1/libexec/lib/python2.7/site-packages/bzt/resources/base-config.yml']
+[2018-08-14 15:26:32,750 DEBUG Engine.Configuration] Reading /usr/local/Cellar/bzt/1.11.1/libexec/lib/python2.7/site-packages/bzt/resources/base-config.yml as YAML
+[2018-08-14 15:26:32,773 DEBUG Engine] User configs list: ['/Users/panja09/.bzt-rc', 'basic_script.yml']
+[2018-08-14 15:26:32,773 DEBUG Engine.Configuration] Configs: ['/Users/panja09/.bzt-rc', 'basic_script.yml']
+[2018-08-14 15:26:32,773 DEBUG Engine.Configuration] Reading /Users/panja09/.bzt-rc as YAML
+[2018-08-14 15:26:32,776 DEBUG Engine.Configuration] Reading basic_script.yml as YAML
+[2018-08-14 15:26:32,778 DEBUG Engine.Configuration] Configs: ['/Users/panja09/.bzt-rc', 'basic_script.yml']
+[2018-08-14 15:26:32,779 DEBUG Engine.Configuration] Reading /Users/panja09/.bzt-rc as YAML
+[2018-08-14 15:26:32,782 DEBUG Engine.Configuration] Reading basic_script.yml as YAML
+[2018-08-14 15:26:32,791 DEBUG Engine] Requesting updates info: http://gettaurus.org/updates/?version=1.11.1&installID=macos-8c859025ba21
+[2018-08-14 15:26:32,794 INFO Engine] Artifacts dir: /Users/panja09/OneDrive - CA Technologies/Taurus/2018-08-14_15-26-32.791315
+[2018-08-14 15:26:32,794 DEBUG Engine] New artifact filename: /Users/panja09/OneDrive - CA Technologies/Taurus/2018-08-14_15-26-32.791315/effective
+[2018-08-14 15:26:32,796 DEBUG Engine.Configuration] Dumping YAML config into /Users/panja09/OneDrive - CA Technologies/Taurus/2018-08-14_15-26-32.791315/effective.yml
+[2018-08-14 15:26:32,812 DEBUG Engine.Configuration] Dumping JSON config into /Users/panja09/OneDrive - CA Technologies/Taurus/2018-08-14_15-26-32.791315/effective.json
+[2018-08-14 15:26:32,813 DEBUG Engine] New artifact filename: /Users/panja09/OneDrive - CA Technologies/Taurus/2018-08-14_15-26-32.791315/merged.yml
+[2018-08-14 15:26:32,813 DEBUG Engine.Configuration] Dumping YAML config into /Users/panja09/OneDrive - CA Technologies/Taurus/2018-08-14_15-26-32.791315/merged.yml
+[2018-08-14 15:26:32,815 DEBUG Engine] New artifact filename: /Users/panja09/OneDrive - CA Technologies/Taurus/2018-08-14_15-26-32.791315/merged.json
+[2018-08-14 15:26:32,816 DEBUG Engine.Configuration] Dumping JSON config into /Users/panja09/OneDrive - CA Technologies/Taurus/2018-08-14_15-26-32.791315/merged.json
+[2018-08-14 15:26:32,816 DEBUG Engine] Add existing artifact (move=False): basic_script.yml
+[2018-08-14 15:26:32,816 DEBUG Engine] Copying basic_script.yml to /Users/panja09/OneDrive - CA Technologies/Taurus/2018-08-14_15-26-32.791315/basic_script.yml
+[2018-08-14 15:26:32,817 DEBUG Engine.Environment] Replace 'TAURUS_ARTIFACTS_DIR' in environment
+[2018-08-14 15:26:32,817 DEBUG root] Closing log handler: /var/folders/v3/yp_zdc392qq1bxx6gs3_pvj9cgtsbx/T/bzt_Arep4F.log
+[2018-08-14 15:26:32,844 DEBUG root] Switched writing logs to /Users/panja09/OneDrive - CA Technologies/Taurus/2018-08-14_15-26-32.791315/bzt.log
+[2018-08-14 15:26:32,844 DEBUG root] Linting config
+[2018-08-14 15:26:32,847 INFO Engine] Preparing...
+[2018-08-14 15:26:32,848 DEBUG Engine] Module config: consolidator defaultdict(None, {'class': 'bzt.modules.aggregator.ConsolidatingAggregator'})
+[2018-08-14 15:26:32,848 DEBUG root] Importing module: bzt.modules.aggregator
+[2018-08-14 15:26:32,931 DEBUG root] Loading class: 'ConsolidatingAggregator' from <module 'bzt.modules.aggregator' from '/usr/local/Cellar/bzt/1.11.1/libexec/lib/python2.7/site-packages/bzt/modules/aggregator.pyc'>
+[2018-08-14 15:26:32,931 DEBUG Engine.consolidator] Buffer scaling setup: percentile 95.0 from [0.0, 50.0, 90.0, 95.0, 99.0, 99.9, 100.0] selected
+[2018-08-14 15:26:32,931 DEBUG Engine] Module config: monitoring defaultdict(None, {'class': 'bzt.modules.monitoring.Monitoring'})
+[2018-08-14 15:26:32,931 DEBUG root] Importing module: bzt.modules.monitoring
+[2018-08-14 15:26:32,932 DEBUG root] Loading class: 'Monitoring' from <module 'bzt.modules.monitoring' from '/usr/local/Cellar/bzt/1.11.1/libexec/lib/python2.7/site-packages/bzt/modules/monitoring.pyc'>
+[2018-08-14 15:26:32,933 DEBUG Engine] Module config: local defaultdict(None, {'class': 'bzt.modules.provisioning.Local'})
+[2018-08-14 15:26:32,933 DEBUG root] Importing module: bzt.modules.provisioning
+[2018-08-14 15:26:32,933 DEBUG root] Loading class: 'Local' from <module 'bzt.modules.provisioning' from '/usr/local/Cellar/bzt/1.11.1/libexec/lib/python2.7/site-packages/bzt/modules/provisioning.pyc'>
+[2018-08-14 15:26:32,933 DEBUG Engine] Module config: jmeter defaultdict(None, {'properties': defaultdict(None, {'jmeter.save.saveservice.autoflush': 'true', 'jmeter.save.saveservice.connect_time': 'true', 'summariser.name': '', 'jmeterengine.force.system.exit': 'true'}), 'class': 'bzt.modules.jmeter.JMeterExecutor', 'plugins': ['jpgc-casutg', 'jpgc-dummy', 'jpgc-ffw', 'jpgc-fifo', 'jpgc-functions', 'jpgc-json', 'jpgc-perfmon', 'jpgc-prmctl', 'jpgc-tst']})
+[2018-08-14 15:26:32,933 DEBUG root] Importing module: bzt.modules.jmeter
+[2018-08-14 15:26:32,940 DEBUG root] Loading class: 'JMeterExecutor' from <module 'bzt.modules.jmeter' from '/usr/local/Cellar/bzt/1.11.1/libexec/lib/python2.7/site-packages/bzt/modules/jmeter.pyc'>
+[2018-08-14 15:26:32,940 DEBUG Engine.local] Preparing executor: jmeter/4474415312
+[2018-08-14 15:26:32,940 DEBUG Engine] New artifact filename: /Users/panja09/OneDrive - CA Technologies/Taurus/2018-08-14_15-26-32.791315/jmeter.log
+[2018-08-14 15:26:32,940 DEBUG Engine.jmeter] Checking if port 4445 is free
+[2018-08-14 15:26:32,941 DEBUG Engine.jmeter] Port 4445 is free
+[2018-08-14 15:26:32,941 DEBUG Engine.jmeter] Using port 4445 for management
+[2018-08-14 15:26:32,941 DEBUG Engine.jmeter.JavaVM] Trying JavaVM: ['java', '-version']
+[2018-08-14 15:26:33,059 DEBUG Engine.jmeter.JavaVM] JavaVM output: java version "1.8.0_151"
+Java(TM) SE Runtime Environment (build 1.8.0_151-b12)
+Java HotSpot(TM) 64-Bit Server VM (build 25.151-b12, mixed mode)
+[2018-08-14 15:26:33,059 DEBUG Engine.jmeter.TclLibrary] We don't need to check tcl library on this platform
+[2018-08-14 15:26:33,059 DEBUG Engine.jmeter.JMeter] Trying jmeter: /Users/panja09/.bzt/jmeter-taurus/4.0/bin/jmeter.sh
+[2018-08-14 15:26:33,060 DEBUG bzt.utils] Executing shell: ['/Users/panja09/.bzt/jmeter-taurus/4.0/bin/jmeter.sh', '-j', '/var/folders/v3/yp_zdc392qq1bxx6gs3_pvj9cgtsbx/T/jmeter4PTqiKlog', '--version'] at .
+[2018-08-14 15:26:33,282 DEBUG Engine] Taurus updates info: {"latest":"1.12.1","needsUpgrade":true}
+[2018-08-14 15:26:33,282 WARNING Engine] There is newer version of Taurus 1.12.1 available, consider upgrading. What's new: http://gettaurus.org/docs/Changelog/
+[2018-08-14 15:26:34,019 DEBUG Engine.jmeter.JMeter] JMeter check:     _    ____   _    ____ _   _ _____       _ __  __ _____ _____ _____ ____     
+   / \  |  _ \ / \  / ___| | | | ____|     | |  \/  | ____|_   _| ____|  _ \   
+  / _ \ | |_) / _ \| |   | |_| |  _|    _  | | |\/| |  _|   | | |  _| | |_) | 
+ / ___ \|  __/ ___ \ |___|  _  | |___  | |_| | |  | | |___  | | | |___|  _ <  
+/_/   \_\_| /_/   \_\____|_| |_|_____|  \___/|_|  |_|_____| |_| |_____|_| \_\ 4.0 r1823414  
+
+Copyright (c) 1999-2018 The Apache Software Foundation
+
+ / None
+[2018-08-14 15:26:34,020 DEBUG Engine] New artifact filename: /Users/panja09/OneDrive - CA Technologies/Taurus/2018-08-14_15-26-32.791315/requests.jmx
+[2018-08-14 15:26:34,022 DEBUG JMeterScenarioBuilder] Saving JMX to: /Users/panja09/OneDrive - CA Technologies/Taurus/2018-08-14_15-26-32.791315/requests.jmx
+[2018-08-14 15:26:34,023 DEBUG Engine.jmeter] Load: LoadSpec(concurrency=20, throughput=None, ramp_up=60.0, hold=60.0, iterations=0, duration=120.0, steps=None)
+[2018-08-14 15:26:34,034 DEBUG Engine] New artifact filename: /Users/panja09/OneDrive - CA Technologies/Taurus/2018-08-14_15-26-32.791315/kpi.jtl
+[2018-08-14 15:26:34,034 DEBUG Engine] New artifact filename: /Users/panja09/OneDrive - CA Technologies/Taurus/2018-08-14_15-26-32.791315/error.jtl
+[2018-08-14 15:26:34,036 DEBUG Engine.jmeter.LoadSettingsProcessor.ThreadGroupHandler] Converting ThreadGroup (basic-script) to ConcurrencyThreadGroup and apply load parameters
+[2018-08-14 15:26:34,036 DEBUG Engine] New artifact filename: /Users/panja09/OneDrive - CA Technologies/Taurus/2018-08-14_15-26-32.791315/modified_requests.jmx
+[2018-08-14 15:26:34,036 DEBUG JMX] Saving JMX to: /Users/panja09/OneDrive - CA Technologies/Taurus/2018-08-14_15-26-32.791315/modified_requests.jmx
+[2018-08-14 15:26:34,037 DEBUG Engine.jmeter] Additional properties: defaultdict(None, {'jmeter.save.saveservice.autoflush': 'true', 'jmeter.save.saveservice.connect_time': 'true', 'user.classpath': '/Users/panja09/OneDrive - CA Technologies/Taurus/2018-08-14_15-26-32.791315:/Users/panja09/OneDrive - CA Technologies/Taurus/2018-08-14_15-26-32.791315', 'sampleresult.default.encoding': 'UTF-8', 'summariser.name': '', 'jmeterengine.force.system.exit': 'true', 'jmeter.save.saveservice.timestamp_format': 'ms', 'jmeterengine.nongui.maxport': 4445, 'jmeterengine.nongui.port': 4445})
+[2018-08-14 15:26:34,037 DEBUG Engine] New artifact filename: /Users/panja09/OneDrive - CA Technologies/Taurus/2018-08-14_15-26-32.791315/jmeter-bzt.properties
+[2018-08-14 15:26:34,037 DEBUG Engine.jmeter] Additional system properties defaultdict(None, {'sun.net.inetaddr.ttl': 0})
+[2018-08-14 15:26:34,037 DEBUG Engine] New artifact filename: /Users/panja09/OneDrive - CA Technologies/Taurus/2018-08-14_15-26-32.791315/system.properties
+[2018-08-14 15:26:34,037 DEBUG bzt.utils] Executing shell: ['/Users/panja09/.bzt/jmeter-taurus/4.0/bin/PluginsManagerCMD.sh', 'install-for-jmx', '/Users/panja09/OneDrive - CA Technologies/Taurus/2018-08-14_15-26-32.791315/modified_requests.jmx'] at .
+[2018-08-14 15:26:36,620 DEBUG Engine.jmeter.JMeter] Try to detect plugins for /Users/panja09/OneDrive - CA Technologies/Taurus/2018-08-14_15-26-32.791315/modified_requests.jmx
+15:26:35.769 [main] INFO  org.jmeterplugins.repository.PluginManager - Plugins Status: [jpgc-functions=2.1, custom-soap=1.3, jpgc-casutg=2.5, jpgc-dummy=0.2, jpgc-ffw=2.0, jpgc-fifo=0.2, jpgc-json=2.6, bzm-parallel=0.7, jpgc-prmctl=0.4, jpgc-perfmon=2.1, jpgc-plugins-manager=0.20, jpgc-tst=2.4, jmeter-core=4.0, jmeter-ftp=4.0, jmeter-http=4.0, jmeter-jdbc=4.0, jmeter-jms=4.0, jmeter-junit=4.0, jmeter-java=4.0, jmeter-ldap=4.0, jmeter-mail=4.0, jmeter-mongodb=4.0, jmeter-native=4.0, jmeter-tcp=4.0, jmeter-components=4.0]
+2018-08-14 15:26:35,769 INFO o.j.r.PluginManager: Plugins Status: [jpgc-functions=2.1, custom-soap=1.3, jpgc-casutg=2.5, jpgc-dummy=0.2, jpgc-ffw=2.0, jpgc-fifo=0.2, jpgc-json=2.6, bzm-parallel=0.7, jpgc-prmctl=0.4, jpgc-perfmon=2.1, jpgc-plugins-manager=0.20, jpgc-tst=2.4, jmeter-core=4.0, jmeter-ftp=4.0, jmeter-http=4.0, jmeter-jdbc=4.0, jmeter-jms=4.0, jmeter-junit=4.0, jmeter-java=4.0, jmeter-ldap=4.0, jmeter-mail=4.0, jmeter-mongodb=4.0, jmeter-native=4.0, jmeter-tcp=4.0, jmeter-components=4.0]
+15:26:36.063 [main] INFO  org.apache.jmeter.save.SaveService - Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2018-08-14 15:26:36,063 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+15:26:36.073 [main] INFO  org.apache.jmeter.save.SaveService - Using SaveService properties file encoding UTF-8
+2018-08-14 15:26:36,073 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+15:26:36.077 [main] INFO  org.apache.jmeter.save.SaveService - Using SaveService properties version 4.0
+2018-08-14 15:26:36,077 INFO o.a.j.s.SaveService: Using SaveService properties version 4.0
+15:26:36.103 [main] INFO  org.apache.jmeter.protocol.http.control.CacheManager - Will only cache the following methods: [GET]
+2018-08-14 15:26:36,103 INFO o.a.j.p.h.c.CacheManager: Will only cache the following methods: [GET]
+15:26:36.106 [main] INFO  org.apache.jmeter.protocol.http.control.CookieManager - Settings: Delete null: true Check: true Allow variable: true Save: false Prefix: COOKIE_
+2018-08-14 15:26:36,106 INFO o.a.j.p.h.c.CookieManager: Settings: Delete null: true Check: true Allow variable: true Save: false Prefix: COOKIE_
+15:26:36.173 [main] INFO  org.jmeterplugins.repository.PluginManager - Restarting JMeter...
+2018-08-14 15:26:36,173 INFO o.j.r.PluginManager: Restarting JMeter...
+
+ERROR StatusLogger No log4j2 configuration file found. Using default configuration: logging only errors to the console. Set system property 'log4j2.debug' to show Log4j2 internal initialization logging.
+
+[2018-08-14 15:26:41,621 DEBUG Engine] New artifact filename: /Users/panja09/OneDrive - CA Technologies/Taurus/2018-08-14_15-26-32.791315/jmeter.out
+[2018-08-14 15:26:41,621 DEBUG Engine] New artifact filename: /Users/panja09/OneDrive - CA Technologies/Taurus/2018-08-14_15-26-32.791315/jmeter.err
+[2018-08-14 15:26:41,623 DEBUG Engine] Module config: final-stats defaultdict(None, {'class': 'bzt.modules.reporting.FinalStatus'})
+[2018-08-14 15:26:41,623 DEBUG root] Importing module: bzt.modules.reporting
+[2018-08-14 15:26:41,673 DEBUG easyprocess] version=0.2.3
+[2018-08-14 15:26:41,674 DEBUG pyvirtualdisplay] version=0.2.1
+[2018-08-14 15:26:41,675 DEBUG root] Loading class: 'FinalStatus' from <module 'bzt.modules.reporting' from '/usr/local/Cellar/bzt/1.11.1/libexec/lib/python2.7/site-packages/bzt/modules/reporting.pyc'>
+[2018-08-14 15:26:41,676 DEBUG Engine] Module config: console defaultdict(None, {'class': 'bzt.modules.console.ConsoleStatusReporter'})
+[2018-08-14 15:26:41,676 DEBUG root] Importing module: bzt.modules.console
+[2018-08-14 15:26:41,676 DEBUG root] Loading class: 'ConsoleStatusReporter' from <module 'bzt.modules.console' from '/usr/local/Cellar/bzt/1.11.1/libexec/lib/python2.7/site-packages/bzt/modules/console.pyc'>
+[2018-08-14 15:26:41,681 DEBUG Engine.Configuration] Dumping YAML config into /Users/panja09/OneDrive - CA Technologies/Taurus/2018-08-14_15-26-32.791315/effective.yml
+[2018-08-14 15:26:41,698 DEBUG Engine.Configuration] Dumping JSON config into /Users/panja09/OneDrive - CA Technologies/Taurus/2018-08-14_15-26-32.791315/effective.json
+[2018-08-14 15:26:41,699 INFO Engine] Starting...
+[2018-08-14 15:26:41,699 DEBUG Engine] Startup <bzt.modules.monitoring.Monitoring object at 0x109b8bc90>
+[2018-08-14 15:26:41,700 DEBUG Engine] Startup <bzt.modules.aggregator.ConsolidatingAggregator object at 0x109b8b590>
+[2018-08-14 15:26:41,700 DEBUG Engine] Startup <bzt.modules.reporting.FinalStatus object at 0x109b5a390>
+[2018-08-14 15:26:41,700 DEBUG Engine] Startup <bzt.modules.console.ConsoleStatusReporter object at 0x10aca18d0>
+[2018-08-14 15:26:41,700 INFO Engine.console] Waiting for results...
+[2018-08-14 15:26:41,700 DEBUG Engine] Startup <bzt.modules.provisioning.Local object at 0x109b5a090>
+[2018-08-14 15:26:41,700 DEBUG Engine.local] Delay setup for jmeter/basic-script: 0(start-at) + 0(delay) = 0
+[2018-08-14 15:26:41,703 DEBUG Engine.Configuration] Dumping YAML config into /Users/panja09/OneDrive - CA Technologies/Taurus/2018-08-14_15-26-32.791315/effective.yml
+[2018-08-14 15:26:41,723 DEBUG Engine.Configuration] Dumping JSON config into /Users/panja09/OneDrive - CA Technologies/Taurus/2018-08-14_15-26-32.791315/effective.json
+[2018-08-14 15:26:41,724 DEBUG root] Leveling down log file verbosity, use -v option to have DEBUG messages enabled
+[2018-08-14 15:26:41,724 DEBUG root] Leveled up log file verbosity
+[2018-08-14 15:26:41,725 DEBUG bzt.utils] Executing shell: ['/Users/panja09/.bzt/jmeter-taurus/4.0/bin/jmeter.sh', '-n', '-t', '/Users/panja09/OneDrive - CA Technologies/Taurus/2018-08-14_15-26-32.791315/modified_requests.jmx', '-j', '/Users/panja09/OneDrive - CA Technologies/Taurus/2018-08-14_15-26-32.791315/jmeter.log', '-q', '/Users/panja09/OneDrive - CA Technologies/Taurus/2018-08-14_15-26-32.791315/jmeter-bzt.properties', '-S', '/Users/panja09/OneDrive - CA Technologies/Taurus/2018-08-14_15-26-32.791315/system.properties'] at /Users/panja09/OneDrive - CA Technologies/Taurus
+[2018-08-14 15:26:41,731 DEBUG root] Leveling down log file verbosity, use -v option to have DEBUG messages enabled
+[2018-08-14 15:26:41,952 INFO Engine.console] Waiting for finish...
+[2018-08-14 15:27:03,768 INFO Engine.jmeter.JTLReader] Changed data analysis delay to 3s
+[2018-08-14 15:28:15,901 INFO Engine.jmeter.JTLReader] Changed data analysis delay to 4s
+[2018-08-14 15:28:45,994 WARNING Engine] Please wait for graceful shutdown...
+[2018-08-14 15:28:46,001 DEBUG root] Leveled up log file verbosity
+[2018-08-14 15:28:46,001 INFO Engine] Shutting down...
+[2018-08-14 15:28:46,007 DEBUG Engine] Current stop reason: None
+[2018-08-14 15:28:46,007 DEBUG Engine.local] Shutdown jmeter/basic-script
+[2018-08-14 15:28:46,008 DEBUG Engine.console] Restoring logging streams, [<logging.StreamHandler object at 0x109b3e6d0>]/{<logging.StreamHandler object at 0x109b3e6d0>: <open file '<stdout>', mode 'w' at 0x108534150>}
+[2018-08-14 15:28:46,009 DEBUG Engine.Configuration] Dumping YAML config into /Users/panja09/OneDrive - CA Technologies/Taurus/2018-08-14_15-26-32.791315/effective.yml
+[2018-08-14 15:28:46,028 DEBUG Engine.Configuration] Dumping JSON config into /Users/panja09/OneDrive - CA Technologies/Taurus/2018-08-14_15-26-32.791315/effective.json
+[2018-08-14 15:28:46,029 INFO Engine] Post-processing...
+[2018-08-14 15:28:46,029 DEBUG Engine.local] Post-process jmeter/basic-script
+[2018-08-14 15:28:46,030 DEBUG Engine] Add existing artifact (move=True): /Users/panja09/OneDrive - CA Technologies/Taurus/2018-08-14_15-26-32.791315/modified_requests.jmx
+[2018-08-14 15:28:46,030 DEBUG Engine] No need to copy /Users/panja09/OneDrive - CA Technologies/Taurus/2018-08-14_15-26-32.791315/modified_requests.jmx
+[2018-08-14 15:28:46,030 DEBUG Engine.jmeter.JTLErrorsReader.FileReader] Reading: /Users/panja09/OneDrive - CA Technologies/Taurus/2018-08-14_15-26-32.791315/error.jtl
+[2018-08-14 15:28:46,030 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader.FileReader] Reading: /Users/panja09/OneDrive - CA Technologies/Taurus/2018-08-14_15-26-32.791315/kpi.jtl
+[2018-08-14 15:28:46,030 DEBUG Engine.jmeter.JTLReader] Buffer len: 4
+[2018-08-14 15:28:46,030 DEBUG Engine.jmeter.JTLReader] Aggregating: 1534278520
+[2018-08-14 15:28:46,052 DEBUG Engine.jmeter.JTLReader] Aggregating: 1534278521
+[2018-08-14 15:28:46,070 DEBUG Engine.jmeter.JTLReader] Aggregating: 1534278522
+[2018-08-14 15:28:46,090 DEBUG Engine.jmeter.JTLReader] Aggregating: 1534278523
+[2018-08-14 15:28:46,106 DEBUG Engine.consolidator] Consolidator buffer[6]: [1534278518, 1534278519, 1534278520, 1534278521, 1534278522, 1534278523]
+[2018-08-14 15:28:46,106 DEBUG Engine.consolidator] Merging into 1534278518
+[2018-08-14 15:28:46,106 DEBUG Engine.consolidator] Merging 1534278518
+[2018-08-14 15:28:46,145 DEBUG Engine.consolidator] Processed datapoint: 1534278518/None
+[2018-08-14 15:28:46,145 DEBUG Engine.consolidator] Merging into 1534278519
+[2018-08-14 15:28:46,145 DEBUG Engine.consolidator] Merging 1534278519
+[2018-08-14 15:28:46,184 DEBUG Engine.consolidator] Processed datapoint: 1534278519/None
+[2018-08-14 15:28:46,184 DEBUG Engine.consolidator] Merging into 1534278520
+[2018-08-14 15:28:46,184 DEBUG Engine.consolidator] Merging 1534278520
+[2018-08-14 15:28:46,225 DEBUG Engine.consolidator] Processed datapoint: 1534278520/None
+[2018-08-14 15:28:46,225 DEBUG Engine.consolidator] Merging into 1534278521
+[2018-08-14 15:28:46,225 DEBUG Engine.consolidator] Merging 1534278521
+[2018-08-14 15:28:46,264 DEBUG Engine.consolidator] Processed datapoint: 1534278521/None
+[2018-08-14 15:28:46,265 DEBUG Engine.consolidator] Merging into 1534278522
+[2018-08-14 15:28:46,265 DEBUG Engine.consolidator] Merging 1534278522
+[2018-08-14 15:28:46,306 DEBUG Engine.consolidator] Processed datapoint: 1534278522/None
+[2018-08-14 15:28:46,306 DEBUG Engine.consolidator] Merging into 1534278523
+[2018-08-14 15:28:46,306 DEBUG Engine.consolidator] Merging 1534278523
+[2018-08-14 15:28:46,346 DEBUG Engine.consolidator] Processed datapoint: 1534278523/None
+[2018-08-14 15:28:46,346 INFO Engine.final-stats] Test duration: 0:02:05
+[2018-08-14 15:28:46,346 INFO Engine.final-stats] Samples count: 1906, 0.00% failures
+[2018-08-14 15:28:46,346 INFO Engine.final-stats] Average times: total 0.956, latency 0.142, connect 0.017
+[2018-08-14 15:28:46,346 INFO Engine.final-stats] Percentile 0.0%: 0.400
+[2018-08-14 15:28:46,346 INFO Engine.final-stats] Percentile 50.0%: 0.813
+[2018-08-14 15:28:46,346 INFO Engine.final-stats] Percentile 90.0%: 1.483
+[2018-08-14 15:28:46,347 INFO Engine.final-stats] Percentile 95.0%: 1.836
+[2018-08-14 15:28:46,347 INFO Engine.final-stats] Percentile 99.0%: 2.955
+[2018-08-14 15:28:46,347 INFO Engine.final-stats] Percentile 99.9%: 5.107
+[2018-08-14 15:28:46,347 INFO Engine.final-stats] Percentile 100.0%: 6.203
+[2018-08-14 15:28:46,347 DEBUG Engine.console] No logger_handler or orig_stream was detected
+[2018-08-14 15:28:46,349 DEBUG Engine.Configuration] Dumping YAML config into /Users/panja09/OneDrive - CA Technologies/Taurus/2018-08-14_15-26-32.791315/effective.yml
+[2018-08-14 15:28:46,368 DEBUG Engine.Configuration] Dumping JSON config into /Users/panja09/OneDrive - CA Technologies/Taurus/2018-08-14_15-26-32.791315/effective.json
+[2018-08-14 15:28:46,369 INFO root] Artifacts dir: /Users/panja09/OneDrive - CA Technologies/Taurus/2018-08-14_15-26-32.791315
+[2018-08-14 15:28:46,369 INFO root] Done performing with code: 0
+[2018-08-14 15:28:46,369 DEBUG root] Closing log handler: /Users/panja09/OneDrive - CA Technologies/Taurus/2018-08-14_15-26-32.791315/bzt.log

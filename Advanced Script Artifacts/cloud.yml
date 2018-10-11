@@ -1,0 +1,51 @@
+---
+execution:
+- concurrency: 30
+  executor: jmeter
+  hold-for: 1m
+  locations:
+    us-east-1: 1
+  ramp-up: 60s
+  scenario: advanced-script
+local-bzt-version: 1.11.1
+modules:
+  cloud:
+    account: DoubleOZero
+    send-report-email: false
+    workspace: DoubleOZero
+  gatling:
+    properties:
+      gatling.data.file.bufferSize: 256
+  grinder:
+    properties:
+      grinder.useConsole: false
+  jmeter:
+    properties:
+      jmeter.save.saveservice.autoflush: 'true'
+      jmeter.save.saveservice.connect_time: 'true'
+      jmeterengine.force.system.exit: 'true'
+      summariser.name: ''
+scenarios:
+  advanced-script:
+    data-sources:
+    - delimiter: ','
+      path: stuff.csv
+    requests:
+    - label: Welcome Page
+      url: http://blazedemo.com
+    - label: Register
+      url: http://blazedemo.com/register
+services:
+- local:
+  - metrics:
+    - cpu
+    - mem
+    - bytes-sent
+    - bytes-recv
+    - disk-read
+    - disk-write
+    - disk-space
+    - engine-loop
+    - conn-all
+  module: monitoring
+

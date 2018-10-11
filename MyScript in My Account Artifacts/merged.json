@@ -1,0 +1,40 @@
+{
+ "scenarios": {
+  "blazedemo": {
+   "requests": [
+    {
+     "url": "http://blazedemo.com/", 
+     "method": "GET", 
+     "label": "blazedemo"
+    }
+   ]
+  }
+ }, 
+ "execution": [
+  {
+   "files": [
+    "Numbers.csv"
+   ], 
+   "scenario": "blazedemo", 
+   "ramp-up": "60s", 
+   "locations": {
+    "us-east-1": 1
+   }, 
+   "concurrency": 10, 
+   "hold-for": "1m"
+  }
+ ], 
+ "modules": {
+  "blazemeter": {
+   "token": "********"
+  }, 
+  "cloud": {
+   "project": "Test The Thing", 
+   "test": "What did you see? A Lemur?", 
+   "account": "DoubleOZero", 
+   "workspace": "James's workspace", 
+   "send-report-email": false
+  }
+ }, 
+ "provisioning": "cloud"
+}

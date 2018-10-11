@@ -1,0 +1,25 @@
+     
+modules:
+  cloud:
+    test: What did you see? A Lemur?
+    token: b4b8cd5bf74e56653341d700:c937b8aa875c5f15ec84458a60d0171e10ccf410f045f414f423a623bef926b9183ae204
+
+execution:
+- scenario: blazedemo
+  concurrency: 10
+  hold-for: 1m
+  files: 
+  - /Users/myComp/Downloads/Numbers.csv
+  ramp-up: 60s
+  locations:
+    us-east-1: 1
+
+provisioning: cloud
+  
+scenarios:
+  blazedemo:
+    requests:
+    - label: blazedemo
+      method: GET
+      url: http://blazedemo.com/  
+

@@ -1,0 +1,415 @@
+[2018-08-14 15:31:56,082 INFO root] Taurus CLI Tool v1.11.1
+[2018-08-14 15:31:56,083 DEBUG root] Command-line options: {'verbose': None, 'no_system_configs': None, 'quiet': None, 'log': '/var/folders/v3/yp_zdc392qq1bxx6gs3_pvj9cgtsbx/T/bzt_VBpFAx.log', 'option': None, 'aliases': ['report']}
+[2018-08-14 15:31:56,083 DEBUG root] Python: CPython 2.7.15
+[2018-08-14 15:31:56,083 DEBUG root] OS: ('Darwin', 'panja09mac131', '17.7.0', 'Darwin Kernel Version 17.7.0: Thu Jun 21 22:53:14 PDT 2018; root:xnu-4570.71.2~1/RELEASE_X86_64', 'x86_64', 'i386')
+[2018-08-14 15:31:56,083 INFO root] Starting with configs: ['basic_script.yml']
+[2018-08-14 15:31:56,083 DEBUG root] Using personal config: /Users/panja09/.bzt-rc
+[2018-08-14 15:31:56,083 INFO Engine] Configuring...
+[2018-08-14 15:31:56,083 DEBUG Engine] No machine configs dir: /usr/local/Cellar/bzt/1.11.1/libexec/bin/../etc/bzt.d
+[2018-08-14 15:31:56,083 DEBUG Engine] Base configs list: ['/usr/local/Cellar/bzt/1.11.1/libexec/lib/python2.7/site-packages/bzt/resources/base-config.yml']
+[2018-08-14 15:31:56,083 DEBUG Engine.Configuration] Configs: ['/usr/local/Cellar/bzt/1.11.1/libexec/lib/python2.7/site-packages/bzt/resources/base-config.yml']
+[2018-08-14 15:31:56,084 DEBUG Engine.Configuration] Reading /usr/local/Cellar/bzt/1.11.1/libexec/lib/python2.7/site-packages/bzt/resources/base-config.yml as YAML
+[2018-08-14 15:31:56,104 DEBUG Engine] User configs list: ['/Users/panja09/.bzt-rc', 'basic_script.yml']
+[2018-08-14 15:31:56,104 DEBUG Engine.Configuration] Configs: ['/Users/panja09/.bzt-rc', 'basic_script.yml']
+[2018-08-14 15:31:56,105 DEBUG Engine.Configuration] Reading /Users/panja09/.bzt-rc as YAML
+[2018-08-14 15:31:56,108 DEBUG Engine.Configuration] Reading basic_script.yml as YAML
+[2018-08-14 15:31:56,110 DEBUG Engine.Configuration] Configs: ['/Users/panja09/.bzt-rc', 'basic_script.yml']
+[2018-08-14 15:31:56,110 DEBUG Engine.Configuration] Reading /Users/panja09/.bzt-rc as YAML
+[2018-08-14 15:31:56,113 DEBUG Engine.Configuration] Reading basic_script.yml as YAML
+[2018-08-14 15:31:56,123 DEBUG Engine] Requesting updates info: http://gettaurus.org/updates/?version=1.11.1&installID=macos-8c859025ba21
+[2018-08-14 15:31:56,127 INFO Engine] Artifacts dir: /Users/panja09/OneDrive - CA Technologies/Taurus/2018-08-14_15-31-56.123894
+[2018-08-14 15:31:56,127 DEBUG Engine] New artifact filename: /Users/panja09/OneDrive - CA Technologies/Taurus/2018-08-14_15-31-56.123894/effective
+[2018-08-14 15:31:56,130 DEBUG Engine.Configuration] Dumping YAML config into /Users/panja09/OneDrive - CA Technologies/Taurus/2018-08-14_15-31-56.123894/effective.yml
+[2018-08-14 15:31:56,147 DEBUG Engine.Configuration] Dumping JSON config into /Users/panja09/OneDrive - CA Technologies/Taurus/2018-08-14_15-31-56.123894/effective.json
+[2018-08-14 15:31:56,148 DEBUG Engine] New artifact filename: /Users/panja09/OneDrive - CA Technologies/Taurus/2018-08-14_15-31-56.123894/merged.yml
+[2018-08-14 15:31:56,148 DEBUG Engine.Configuration] Dumping YAML config into /Users/panja09/OneDrive - CA Technologies/Taurus/2018-08-14_15-31-56.123894/merged.yml
+[2018-08-14 15:31:56,150 DEBUG Engine] New artifact filename: /Users/panja09/OneDrive - CA Technologies/Taurus/2018-08-14_15-31-56.123894/merged.json
+[2018-08-14 15:31:56,150 DEBUG Engine.Configuration] Dumping JSON config into /Users/panja09/OneDrive - CA Technologies/Taurus/2018-08-14_15-31-56.123894/merged.json
+[2018-08-14 15:31:56,151 DEBUG Engine] Add existing artifact (move=False): basic_script.yml
+[2018-08-14 15:31:56,151 DEBUG Engine] Copying basic_script.yml to /Users/panja09/OneDrive - CA Technologies/Taurus/2018-08-14_15-31-56.123894/basic_script.yml
+[2018-08-14 15:31:56,151 DEBUG Engine.Environment] Replace 'TAURUS_ARTIFACTS_DIR' in environment
+[2018-08-14 15:31:56,152 DEBUG root] Closing log handler: /var/folders/v3/yp_zdc392qq1bxx6gs3_pvj9cgtsbx/T/bzt_VBpFAx.log
+[2018-08-14 15:31:56,176 DEBUG root] Switched writing logs to /Users/panja09/OneDrive - CA Technologies/Taurus/2018-08-14_15-31-56.123894/bzt.log
+[2018-08-14 15:31:56,176 DEBUG root] Linting config
+[2018-08-14 15:31:56,180 INFO Engine] Preparing...
+[2018-08-14 15:31:56,180 DEBUG Engine] Module config: consolidator defaultdict(None, {'class': 'bzt.modules.aggregator.ConsolidatingAggregator'})
+[2018-08-14 15:31:56,180 DEBUG root] Importing module: bzt.modules.aggregator
+[2018-08-14 15:31:56,263 DEBUG root] Loading class: 'ConsolidatingAggregator' from <module 'bzt.modules.aggregator' from '/usr/local/Cellar/bzt/1.11.1/libexec/lib/python2.7/site-packages/bzt/modules/aggregator.pyc'>
+[2018-08-14 15:31:56,263 DEBUG Engine.consolidator] Buffer scaling setup: percentile 95.0 from [0.0, 50.0, 90.0, 95.0, 99.0, 99.9, 100.0] selected
+[2018-08-14 15:31:56,263 DEBUG Engine] Module config: monitoring defaultdict(None, {'class': 'bzt.modules.monitoring.Monitoring'})
+[2018-08-14 15:31:56,263 DEBUG root] Importing module: bzt.modules.monitoring
+[2018-08-14 15:31:56,264 DEBUG root] Loading class: 'Monitoring' from <module 'bzt.modules.monitoring' from '/usr/local/Cellar/bzt/1.11.1/libexec/lib/python2.7/site-packages/bzt/modules/monitoring.pyc'>
+[2018-08-14 15:31:56,264 DEBUG Engine] Module config: local defaultdict(None, {'class': 'bzt.modules.provisioning.Local'})
+[2018-08-14 15:31:56,264 DEBUG root] Importing module: bzt.modules.provisioning
+[2018-08-14 15:31:56,264 DEBUG root] Loading class: 'Local' from <module 'bzt.modules.provisioning' from '/usr/local/Cellar/bzt/1.11.1/libexec/lib/python2.7/site-packages/bzt/modules/provisioning.pyc'>
+[2018-08-14 15:31:56,264 DEBUG Engine] Module config: jmeter defaultdict(None, {'properties': defaultdict(None, {'jmeter.save.saveservice.autoflush': 'true', 'jmeter.save.saveservice.connect_time': 'true', 'summariser.name': '', 'jmeterengine.force.system.exit': 'true'}), 'class': 'bzt.modules.jmeter.JMeterExecutor', 'plugins': ['jpgc-casutg', 'jpgc-dummy', 'jpgc-ffw', 'jpgc-fifo', 'jpgc-functions', 'jpgc-json', 'jpgc-perfmon', 'jpgc-prmctl', 'jpgc-tst']})
+[2018-08-14 15:31:56,264 DEBUG root] Importing module: bzt.modules.jmeter
+[2018-08-14 15:31:56,271 DEBUG root] Loading class: 'JMeterExecutor' from <module 'bzt.modules.jmeter' from '/usr/local/Cellar/bzt/1.11.1/libexec/lib/python2.7/site-packages/bzt/modules/jmeter.pyc'>
+[2018-08-14 15:31:56,271 DEBUG Engine.local] Preparing executor: jmeter/4496697552
+[2018-08-14 15:31:56,271 DEBUG Engine] New artifact filename: /Users/panja09/OneDrive - CA Technologies/Taurus/2018-08-14_15-31-56.123894/jmeter.log
+[2018-08-14 15:31:56,271 DEBUG Engine.jmeter] Checking if port 4445 is free
+[2018-08-14 15:31:56,272 DEBUG Engine.jmeter] Port 4445 is free
+[2018-08-14 15:31:56,272 DEBUG Engine.jmeter] Using port 4445 for management
+[2018-08-14 15:31:56,272 DEBUG Engine.jmeter.JavaVM] Trying JavaVM: ['java', '-version']
+[2018-08-14 15:31:56,367 DEBUG Engine.jmeter.JavaVM] JavaVM output: java version "1.8.0_151"
+Java(TM) SE Runtime Environment (build 1.8.0_151-b12)
+Java HotSpot(TM) 64-Bit Server VM (build 25.151-b12, mixed mode)
+[2018-08-14 15:31:56,367 DEBUG Engine.jmeter.TclLibrary] We don't need to check tcl library on this platform
+[2018-08-14 15:31:56,367 DEBUG Engine.jmeter.JMeter] Trying jmeter: /Users/panja09/.bzt/jmeter-taurus/4.0/bin/jmeter.sh
+[2018-08-14 15:31:56,368 DEBUG bzt.utils] Executing shell: ['/Users/panja09/.bzt/jmeter-taurus/4.0/bin/jmeter.sh', '-j', '/var/folders/v3/yp_zdc392qq1bxx6gs3_pvj9cgtsbx/T/jmeterIUOSjelog', '--version'] at .
+[2018-08-14 15:31:56,621 DEBUG Engine] Taurus updates info: {"latest":"1.12.1","needsUpgrade":true}
+[2018-08-14 15:31:56,621 WARNING Engine] There is newer version of Taurus 1.12.1 available, consider upgrading. What's new: http://gettaurus.org/docs/Changelog/
+[2018-08-14 15:31:57,281 DEBUG Engine.jmeter.JMeter] JMeter check:     _    ____   _    ____ _   _ _____       _ __  __ _____ _____ _____ ____     
+   / \  |  _ \ / \  / ___| | | | ____|     | |  \/  | ____|_   _| ____|  _ \   
+  / _ \ | |_) / _ \| |   | |_| |  _|    _  | | |\/| |  _|   | | |  _| | |_) | 
+ / ___ \|  __/ ___ \ |___|  _  | |___  | |_| | |  | | |___  | | | |___|  _ <  
+/_/   \_\_| /_/   \_\____|_| |_|_____|  \___/|_|  |_|_____| |_| |_____|_| \_\ 4.0 r1823414  
+
+Copyright (c) 1999-2018 The Apache Software Foundation
+
+ / None
+[2018-08-14 15:31:57,282 DEBUG Engine] New artifact filename: /Users/panja09/OneDrive - CA Technologies/Taurus/2018-08-14_15-31-56.123894/requests.jmx
+[2018-08-14 15:31:57,284 DEBUG JMeterScenarioBuilder] Saving JMX to: /Users/panja09/OneDrive - CA Technologies/Taurus/2018-08-14_15-31-56.123894/requests.jmx
+[2018-08-14 15:31:57,285 DEBUG Engine.jmeter] Load: LoadSpec(concurrency=20, throughput=None, ramp_up=60.0, hold=60.0, iterations=0, duration=120.0, steps=None)
+[2018-08-14 15:31:57,296 DEBUG Engine] New artifact filename: /Users/panja09/OneDrive - CA Technologies/Taurus/2018-08-14_15-31-56.123894/kpi.jtl
+[2018-08-14 15:31:57,297 DEBUG Engine] New artifact filename: /Users/panja09/OneDrive - CA Technologies/Taurus/2018-08-14_15-31-56.123894/error.jtl
+[2018-08-14 15:31:57,298 DEBUG Engine.jmeter.LoadSettingsProcessor.ThreadGroupHandler] Converting ThreadGroup (basic-script) to ConcurrencyThreadGroup and apply load parameters
+[2018-08-14 15:31:57,299 DEBUG Engine] New artifact filename: /Users/panja09/OneDrive - CA Technologies/Taurus/2018-08-14_15-31-56.123894/modified_requests.jmx
+[2018-08-14 15:31:57,299 DEBUG JMX] Saving JMX to: /Users/panja09/OneDrive - CA Technologies/Taurus/2018-08-14_15-31-56.123894/modified_requests.jmx
+[2018-08-14 15:31:57,299 DEBUG Engine.jmeter] Additional properties: defaultdict(None, {'jmeter.save.saveservice.autoflush': 'true', 'jmeter.save.saveservice.connect_time': 'true', 'user.classpath': '/Users/panja09/OneDrive - CA Technologies/Taurus/2018-08-14_15-31-56.123894:/Users/panja09/OneDrive - CA Technologies/Taurus/2018-08-14_15-31-56.123894', 'sampleresult.default.encoding': 'UTF-8', 'summariser.name': '', 'jmeterengine.force.system.exit': 'true', 'jmeter.save.saveservice.timestamp_format': 'ms', 'jmeterengine.nongui.maxport': 4445, 'jmeterengine.nongui.port': 4445})
+[2018-08-14 15:31:57,299 DEBUG Engine] New artifact filename: /Users/panja09/OneDrive - CA Technologies/Taurus/2018-08-14_15-31-56.123894/jmeter-bzt.properties
+[2018-08-14 15:31:57,299 DEBUG Engine.jmeter] Additional system properties defaultdict(None, {'sun.net.inetaddr.ttl': 0})
+[2018-08-14 15:31:57,300 DEBUG Engine] New artifact filename: /Users/panja09/OneDrive - CA Technologies/Taurus/2018-08-14_15-31-56.123894/system.properties
+[2018-08-14 15:31:57,300 DEBUG bzt.utils] Executing shell: ['/Users/panja09/.bzt/jmeter-taurus/4.0/bin/PluginsManagerCMD.sh', 'install-for-jmx', '/Users/panja09/OneDrive - CA Technologies/Taurus/2018-08-14_15-31-56.123894/modified_requests.jmx'] at .
+[2018-08-14 15:31:59,973 DEBUG Engine.jmeter.JMeter] Try to detect plugins for /Users/panja09/OneDrive - CA Technologies/Taurus/2018-08-14_15-31-56.123894/modified_requests.jmx
+15:31:59.028 [main] INFO  org.jmeterplugins.repository.PluginManager - Plugins Status: [jpgc-functions=2.1, custom-soap=1.3, jpgc-casutg=2.5, jpgc-dummy=0.2, jpgc-ffw=2.0, jpgc-fifo=0.2, jpgc-json=2.6, bzm-parallel=0.7, jpgc-prmctl=0.4, jpgc-perfmon=2.1, jpgc-plugins-manager=0.20, jpgc-tst=2.4, jmeter-core=4.0, jmeter-ftp=4.0, jmeter-http=4.0, jmeter-jdbc=4.0, jmeter-jms=4.0, jmeter-junit=4.0, jmeter-java=4.0, jmeter-ldap=4.0, jmeter-mail=4.0, jmeter-mongodb=4.0, jmeter-native=4.0, jmeter-tcp=4.0, jmeter-components=4.0]
+2018-08-14 15:31:59,028 INFO o.j.r.PluginManager: Plugins Status: [jpgc-functions=2.1, custom-soap=1.3, jpgc-casutg=2.5, jpgc-dummy=0.2, jpgc-ffw=2.0, jpgc-fifo=0.2, jpgc-json=2.6, bzm-parallel=0.7, jpgc-prmctl=0.4, jpgc-perfmon=2.1, jpgc-plugins-manager=0.20, jpgc-tst=2.4, jmeter-core=4.0, jmeter-ftp=4.0, jmeter-http=4.0, jmeter-jdbc=4.0, jmeter-jms=4.0, jmeter-junit=4.0, jmeter-java=4.0, jmeter-ldap=4.0, jmeter-mail=4.0, jmeter-mongodb=4.0, jmeter-native=4.0, jmeter-tcp=4.0, jmeter-components=4.0]
+15:31:59.360 [main] INFO  org.apache.jmeter.save.SaveService - Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2018-08-14 15:31:59,360 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+15:31:59.372 [main] INFO  org.apache.jmeter.save.SaveService - Using SaveService properties file encoding UTF-8
+2018-08-14 15:31:59,372 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+15:31:59.376 [main] INFO  org.apache.jmeter.save.SaveService - Using SaveService properties version 4.0
+2018-08-14 15:31:59,376 INFO o.a.j.s.SaveService: Using SaveService properties version 4.0
+15:31:59.407 [main] INFO  org.apache.jmeter.protocol.http.control.CacheManager - Will only cache the following methods: [GET]
+2018-08-14 15:31:59,407 INFO o.a.j.p.h.c.CacheManager: Will only cache the following methods: [GET]
+15:31:59.410 [main] INFO  org.apache.jmeter.protocol.http.control.CookieManager - Settings: Delete null: true Check: true Allow variable: true Save: false Prefix: COOKIE_
+2018-08-14 15:31:59,410 INFO o.a.j.p.h.c.CookieManager: Settings: Delete null: true Check: true Allow variable: true Save: false Prefix: COOKIE_
+15:31:59.511 [main] INFO  org.jmeterplugins.repository.PluginManager - Restarting JMeter...
+2018-08-14 15:31:59,511 INFO o.j.r.PluginManager: Restarting JMeter...
+
+ERROR StatusLogger No log4j2 configuration file found. Using default configuration: logging only errors to the console. Set system property 'log4j2.debug' to show Log4j2 internal initialization logging.
+
+[2018-08-14 15:32:04,975 DEBUG Engine] New artifact filename: /Users/panja09/OneDrive - CA Technologies/Taurus/2018-08-14_15-31-56.123894/jmeter.out
+[2018-08-14 15:32:04,975 DEBUG Engine] New artifact filename: /Users/panja09/OneDrive - CA Technologies/Taurus/2018-08-14_15-31-56.123894/jmeter.err
+[2018-08-14 15:32:04,977 DEBUG Engine] Module config: final-stats defaultdict(None, {'class': 'bzt.modules.reporting.FinalStatus'})
+[2018-08-14 15:32:04,977 DEBUG root] Importing module: bzt.modules.reporting
+[2018-08-14 15:32:05,027 DEBUG easyprocess] version=0.2.3
+[2018-08-14 15:32:05,028 DEBUG pyvirtualdisplay] version=0.2.1
+[2018-08-14 15:32:05,029 DEBUG root] Loading class: 'FinalStatus' from <module 'bzt.modules.reporting' from '/usr/local/Cellar/bzt/1.11.1/libexec/lib/python2.7/site-packages/bzt/modules/reporting.pyc'>
+[2018-08-14 15:32:05,029 DEBUG Engine] Module config: console defaultdict(None, {'class': 'bzt.modules.console.ConsoleStatusReporter'})
+[2018-08-14 15:32:05,029 DEBUG root] Importing module: bzt.modules.console
+[2018-08-14 15:32:05,029 DEBUG root] Loading class: 'ConsoleStatusReporter' from <module 'bzt.modules.console' from '/usr/local/Cellar/bzt/1.11.1/libexec/lib/python2.7/site-packages/bzt/modules/console.pyc'>
+[2018-08-14 15:32:05,029 DEBUG Engine] Module config: blazemeter defaultdict(None, {'token': '********', 'class': 'bzt.modules.blazemeter.BlazeMeterUploader'})
+[2018-08-14 15:32:05,029 DEBUG root] Importing module: bzt.modules.blazemeter
+[2018-08-14 15:32:05,029 DEBUG root] Loading class: 'BlazeMeterUploader' from <module 'bzt.modules.blazemeter' from '/usr/local/Cellar/bzt/1.11.1/libexec/lib/python2.7/site-packages/bzt/modules/blazemeter.pyc'>
+[2018-08-14 15:32:05,033 DEBUG User] Request: GET https://a.blazemeter.com/api/v4/web/version None
+[2018-08-14 15:32:05,093 DEBUG urllib3.connectionpool] Starting new HTTPS connection (1): a.blazemeter.com
+[2018-08-14 15:32:05,415 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "GET /api/v4/web/version HTTP/1.1" 200 200
+[2018-08-14 15:32:05,417 DEBUG User] Response [200]: {
+    "api_version": 4,
+    "error": null,
+    "result": "packages_backendPackageBuild 11572 release/2018-07-31_101 B11572  Sun Aug 12 18:48:59 2018 +0300 8b834d953149d48d19a386606bf64967ce47e1c7\n"
+}
+[2018-08-14 15:32:05,417 DEBUG User] Request: GET https://a.blazemeter.com/api/v4/accounts None
+[2018-08-14 15:32:05,598 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "GET /api/v4/accounts HTTP/1.1" 200 893
+[2018-08-14 15:32:05,599 DEBUG User] Response [200]: {
+    "limit": 10,
+    "skip": 0,
+    "total": 1,
+    "hidden": 0,
+    "api_version": 4,
+    "error": null,
+    "result": [
+        {
+            "id": 182891,
+            "name": "DoubleOZero",
+            "thumbnailUrl": "",
+            "salesforceId": n
+[2018-08-14 15:32:05,601 DEBUG User] Request: GET https://a.blazemeter.com/api/v4/workspaces?accountId=182891&enabled=true&limit=100 None
+[2018-08-14 15:32:05,771 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "GET /api/v4/workspaces?accountId=182891&enabled=true&limit=100 HTTP/1.1" 200 2846
+[2018-08-14 15:32:05,773 DEBUG User] Response [200]: {
+    "limit": 100,
+    "skip": 0,
+    "total": 4,
+    "hidden": 0,
+    "api_version": 4,
+    "error": null,
+    "result": [
+        {
+            "id": 202422,
+            "name": "DoubleOZero",
+            "userId": 399353,
+            "created": 1520527
+[2018-08-14 15:32:05,776 DEBUG User] Request: GET https://a.blazemeter.com/api/v4/tests?workspaceId=202422&name=Taurus+Test None
+[2018-08-14 15:32:05,970 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "GET /api/v4/tests?workspaceId=202422&name=Taurus+Test HTTP/1.1" 200 3602
+[2018-08-14 15:32:05,971 DEBUG User] Response [200]: {
+    "limit": 10,
+    "skip": 0,
+    "total": 3,
+    "hidden": 0,
+    "api_version": 4,
+    "error": null,
+    "result": [
+        {
+            "id": 6189926,
+            "name": "Taurus Test",
+            "isNewTest": true,
+            "userId": 399353,
+[2018-08-14 15:32:05,973 DEBUG User] Request: GET https://a.blazemeter.com/api/v4/tests?workspaceId=219981&name=Taurus+Test None
+[2018-08-14 15:32:06,342 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "GET /api/v4/tests?workspaceId=219981&name=Taurus+Test HTTP/1.1" 200 126
+[2018-08-14 15:32:06,343 DEBUG User] Response [200]: {
+    "limit": 10,
+    "skip": 0,
+    "total": 0,
+    "hidden": 0,
+    "api_version": 4,
+    "error": null,
+    "result": []
+}
+[2018-08-14 15:32:06,344 DEBUG User] Request: GET https://a.blazemeter.com/api/v4/tests?workspaceId=176590&name=Taurus+Test None
+[2018-08-14 15:32:06,518 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "GET /api/v4/tests?workspaceId=176590&name=Taurus+Test HTTP/1.1" 200 126
+[2018-08-14 15:32:06,519 DEBUG User] Response [200]: {
+    "limit": 10,
+    "skip": 0,
+    "total": 0,
+    "hidden": 0,
+    "api_version": 4,
+    "error": null,
+    "result": []
+}
+[2018-08-14 15:32:06,519 DEBUG User] Request: GET https://a.blazemeter.com/api/v4/tests?workspaceId=183870&name=Taurus+Test None
+[2018-08-14 15:32:06,692 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "GET /api/v4/tests?workspaceId=183870&name=Taurus+Test HTTP/1.1" 200 126
+[2018-08-14 15:32:06,694 DEBUG User] Response [200]: {
+    "limit": 10,
+    "skip": 0,
+    "total": 0,
+    "hidden": 0,
+    "api_version": 4,
+    "error": null,
+    "result": []
+}
+[2018-08-14 15:32:06,699 DEBUG Engine.Configuration] Dumping YAML config into /Users/panja09/OneDrive - CA Technologies/Taurus/2018-08-14_15-31-56.123894/effective.yml
+[2018-08-14 15:32:06,756 DEBUG Engine.Configuration] Dumping JSON config into /Users/panja09/OneDrive - CA Technologies/Taurus/2018-08-14_15-31-56.123894/effective.json
+[2018-08-14 15:32:06,757 INFO Engine] Starting...
+[2018-08-14 15:32:06,758 DEBUG Engine] Startup <bzt.modules.monitoring.Monitoring object at 0x10b0c9990>
+[2018-08-14 15:32:06,758 DEBUG Engine] Startup <bzt.modules.aggregator.ConsolidatingAggregator object at 0x10b0c91d0>
+[2018-08-14 15:32:06,758 DEBUG Engine] Startup <bzt.modules.reporting.FinalStatus object at 0x10b098390>
+[2018-08-14 15:32:06,758 DEBUG Engine] Startup <bzt.modules.console.ConsoleStatusReporter object at 0x10c1e18d0>
+[2018-08-14 15:32:06,758 INFO Engine.console] Waiting for results...
+[2018-08-14 15:32:06,758 DEBUG Engine] Startup <bzt.modules.blazemeter.BlazeMeterUploader object at 0x10c1f7110>
+[2018-08-14 15:32:06,758 INFO Engine.blazemeter] Initiating data feeding...
+[2018-08-14 15:32:06,758 DEBUG User] Request: POST https://a.blazemeter.com/api/v4/tests/5980626/start-external None
+[2018-08-14 15:32:06,981 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "POST /api/v4/tests/5980626/start-external HTTP/1.1" 202 1780
+[2018-08-14 15:32:06,982 DEBUG User] Response [202]: {
+    "api_version": 4,
+    "error": null,
+    "result": {
+        "session": {
+            "id": "r-ext5b733c4aaf2dc",
+            "name": "Taurus Test",
+            "userId": 399353,
+            "offset": 0,
+            "statusCode": 15,
+            "sta
+[2018-08-14 15:32:06,984 INFO Engine.blazemeter] Started data feeding: https://a.blazemeter.com/app/#/masters/18083605
+[2018-08-14 15:32:07,089 DEBUG Engine] Startup <bzt.modules.provisioning.Local object at 0x10b098090>
+[2018-08-14 15:32:07,089 DEBUG Engine.local] Delay setup for jmeter/basic-script: 0(start-at) + 0(delay) = 0
+[2018-08-14 15:32:07,112 DEBUG Engine.Configuration] Dumping YAML config into /Users/panja09/OneDrive - CA Technologies/Taurus/2018-08-14_15-31-56.123894/effective.yml
+[2018-08-14 15:32:07,183 DEBUG Engine.Configuration] Dumping JSON config into /Users/panja09/OneDrive - CA Technologies/Taurus/2018-08-14_15-31-56.123894/effective.json
+[2018-08-14 15:32:07,186 DEBUG root] Leveling down log file verbosity, use -v option to have DEBUG messages enabled
+[2018-08-14 15:32:07,187 DEBUG root] Leveled up log file verbosity
+[2018-08-14 15:32:07,187 DEBUG bzt.utils] Executing shell: ['/Users/panja09/.bzt/jmeter-taurus/4.0/bin/jmeter.sh', '-n', '-t', '/Users/panja09/OneDrive - CA Technologies/Taurus/2018-08-14_15-31-56.123894/modified_requests.jmx', '-j', '/Users/panja09/OneDrive - CA Technologies/Taurus/2018-08-14_15-31-56.123894/jmeter.log', '-q', '/Users/panja09/OneDrive - CA Technologies/Taurus/2018-08-14_15-31-56.123894/jmeter-bzt.properties', '-S', '/Users/panja09/OneDrive - CA Technologies/Taurus/2018-08-14_15-31-56.123894/system.properties'] at /Users/panja09/OneDrive - CA Technologies/Taurus
+[2018-08-14 15:32:07,204 DEBUG root] Leveling down log file verbosity, use -v option to have DEBUG messages enabled
+[2018-08-14 15:32:07,436 INFO Engine.console] Waiting for finish...
+[2018-08-14 15:32:17,362 INFO Engine.jmeter.JTLReader] Changed data analysis delay to 3s
+[2018-08-14 15:32:21,373 INFO Engine.jmeter.JTLReader] Changed data analysis delay to 4s
+[2018-08-14 15:32:32,397 INFO Engine.jmeter.JTLReader] Changed data analysis delay to 5s
+[2018-08-14 15:32:34,403 INFO Engine.jmeter.JTLReader] Changed data analysis delay to 4s
+[2018-08-14 15:32:44,421 INFO Engine.jmeter.JTLReader] Changed data analysis delay to 5s
+[2018-08-14 15:32:46,420 INFO Engine.jmeter.JTLReader] Changed data analysis delay to 4s
+[2018-08-14 15:32:47,421 INFO Engine.jmeter.JTLReader] Changed data analysis delay to 5s
+[2018-08-14 15:32:56,436 INFO Engine.jmeter.JTLReader] Changed data analysis delay to 4s
+[2018-08-14 15:32:58,442 INFO Engine.jmeter.JTLReader] Changed data analysis delay to 5s
+[2018-08-14 15:33:02,448 INFO Engine.jmeter.JTLReader] Changed data analysis delay to 4s
+[2018-08-14 15:33:05,449 INFO Engine.jmeter.JTLReader] Changed data analysis delay to 5s
+[2018-08-14 15:33:07,451 INFO Engine.jmeter.JTLReader] Changed data analysis delay to 4s
+[2018-08-14 15:33:12,456 INFO Engine.jmeter.JTLReader] Changed data analysis delay to 5s
+[2018-08-14 15:34:17,612 WARNING Engine] Please wait for graceful shutdown...
+[2018-08-14 15:34:17,621 DEBUG root] Leveled up log file verbosity
+[2018-08-14 15:34:17,621 INFO Engine] Shutting down...
+[2018-08-14 15:34:17,627 DEBUG Engine] Current stop reason: None
+[2018-08-14 15:34:17,627 DEBUG Engine.local] Shutdown jmeter/basic-script
+[2018-08-14 15:34:17,627 DEBUG Engine.console] Restoring logging streams, [<logging.StreamHandler object at 0x10b07b6d0>]/{<logging.StreamHandler object at 0x10b07b6d0>: <open file '<stdout>', mode 'w' at 0x109a71150>}
+[2018-08-14 15:34:17,629 DEBUG Engine.Configuration] Dumping YAML config into /Users/panja09/OneDrive - CA Technologies/Taurus/2018-08-14_15-31-56.123894/effective.yml
+[2018-08-14 15:34:17,647 DEBUG Engine.Configuration] Dumping JSON config into /Users/panja09/OneDrive - CA Technologies/Taurus/2018-08-14_15-31-56.123894/effective.json
+[2018-08-14 15:34:17,648 INFO Engine] Post-processing...
+[2018-08-14 15:34:17,648 DEBUG Engine.local] Post-process jmeter/basic-script
+[2018-08-14 15:34:17,648 DEBUG Engine] Add existing artifact (move=True): /Users/panja09/OneDrive - CA Technologies/Taurus/2018-08-14_15-31-56.123894/modified_requests.jmx
+[2018-08-14 15:34:17,648 DEBUG Engine] No need to copy /Users/panja09/OneDrive - CA Technologies/Taurus/2018-08-14_15-31-56.123894/modified_requests.jmx
+[2018-08-14 15:34:17,649 DEBUG Engine.jmeter.JTLErrorsReader.FileReader] Reading: /Users/panja09/OneDrive - CA Technologies/Taurus/2018-08-14_15-31-56.123894/error.jtl
+[2018-08-14 15:34:17,649 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader.FileReader] Reading: /Users/panja09/OneDrive - CA Technologies/Taurus/2018-08-14_15-31-56.123894/kpi.jtl
+[2018-08-14 15:34:17,649 DEBUG Engine.jmeter.JTLReader] Buffer len: 5
+[2018-08-14 15:34:17,649 DEBUG Engine.jmeter.JTLReader] Aggregating: 1534278846
+[2018-08-14 15:34:17,672 DEBUG Engine.jmeter.JTLReader] Aggregating: 1534278847
+[2018-08-14 15:34:17,692 DEBUG Engine.jmeter.JTLReader] Aggregating: 1534278848
+[2018-08-14 15:34:17,712 DEBUG Engine.jmeter.JTLReader] Aggregating: 1534278849
+[2018-08-14 15:34:17,733 DEBUG Engine.jmeter.JTLReader] Aggregating: 1534278850
+[2018-08-14 15:34:17,751 DEBUG Engine.consolidator] Consolidator buffer[7]: [1534278848, 1534278849, 1534278850, 1534278844, 1534278845, 1534278846, 1534278847]
+[2018-08-14 15:34:17,751 DEBUG Engine.consolidator] Merging into 1534278844
+[2018-08-14 15:34:17,751 DEBUG Engine.consolidator] Merging 1534278844
+[2018-08-14 15:34:17,798 DEBUG Engine.consolidator] Processed datapoint: 1534278844/None
+[2018-08-14 15:34:17,798 DEBUG Engine.consolidator] Merging into 1534278845
+[2018-08-14 15:34:17,798 DEBUG Engine.consolidator] Merging 1534278845
+[2018-08-14 15:34:17,841 DEBUG Engine.consolidator] Processed datapoint: 1534278845/None
+[2018-08-14 15:34:17,841 DEBUG Engine.consolidator] Merging into 1534278846
+[2018-08-14 15:34:17,841 DEBUG Engine.consolidator] Merging 1534278846
+[2018-08-14 15:34:17,880 DEBUG Engine.consolidator] Processed datapoint: 1534278846/None
+[2018-08-14 15:34:17,880 DEBUG Engine.consolidator] Merging into 1534278847
+[2018-08-14 15:34:17,880 DEBUG Engine.consolidator] Merging 1534278847
+[2018-08-14 15:34:17,921 DEBUG Engine.consolidator] Processed datapoint: 1534278847/None
+[2018-08-14 15:34:17,921 DEBUG Engine.consolidator] Merging into 1534278848
+[2018-08-14 15:34:17,921 DEBUG Engine.consolidator] Merging 1534278848
+[2018-08-14 15:34:17,961 DEBUG Engine.consolidator] Processed datapoint: 1534278848/None
+[2018-08-14 15:34:17,961 DEBUG Engine.consolidator] Merging into 1534278849
+[2018-08-14 15:34:17,961 DEBUG Engine.consolidator] Merging 1534278849
+[2018-08-14 15:34:18,010 DEBUG Engine.consolidator] Processed datapoint: 1534278849/None
+[2018-08-14 15:34:18,010 DEBUG Engine.consolidator] Merging into 1534278850
+[2018-08-14 15:34:18,010 DEBUG Engine.consolidator] Merging 1534278850
+[2018-08-14 15:34:18,048 DEBUG Engine.consolidator] Processed datapoint: 1534278850/None
+[2018-08-14 15:34:18,048 INFO Engine.final-stats] Test duration: 0:02:11
+[2018-08-14 15:34:18,049 INFO Engine.final-stats] Samples count: 1282, 0.00% failures
+[2018-08-14 15:34:18,049 INFO Engine.final-stats] Average times: total 1.427, latency 0.142, connect 0.048
+[2018-08-14 15:34:18,049 INFO Engine.final-stats] Percentile 0.0%: 0.522
+[2018-08-14 15:34:18,049 INFO Engine.final-stats] Percentile 50.0%: 1.336
+[2018-08-14 15:34:18,049 INFO Engine.final-stats] Percentile 90.0%: 2.131
+[2018-08-14 15:34:18,049 INFO Engine.final-stats] Percentile 95.0%: 2.433
+[2018-08-14 15:34:18,049 INFO Engine.final-stats] Percentile 99.0%: 3.039
+[2018-08-14 15:34:18,050 INFO Engine.final-stats] Percentile 99.9%: 5.603
+[2018-08-14 15:34:18,050 INFO Engine.final-stats] Percentile 100.0%: 6.727
+[2018-08-14 15:34:18,050 DEBUG Engine.console] No logger_handler or orig_stream was detected
+[2018-08-14 15:34:18,050 DEBUG Engine.blazemeter] KPI bulk buffer len in post-proc: 10
+[2018-08-14 15:34:18,050 INFO Engine.blazemeter] Sending remaining KPI data to server...
+[2018-08-14 15:34:18,053 DEBUG User] Request: POST https://data.blazemeter.com/submit.php?session_id=r-ext5b733c4aaf2dc&signature=ci1leHQ1YjczM2M0YWFmMmRjOjE1MzU0ODgzMzA6MmM3MTAzMmFmYTFiMjc2YTI1ZWFhMGI3MDFiOTc0YjBkY2FhYjNiMTA0ZjVkMDkyNDdkMzVlYzM3OWE1ZDg1MjE4YWE4MjZkNjkyMDg1N2E0ZDlkNjQzMWRjOWIzOTc3NWZhOWI1M2RjYzJhMTY4Y2IwNWYyOWM1MDMyNDk3NTE=&test_id=5980626&user_id=399353&pq=0&target=labels_bulk&update=1 {
+ "sourceID": 4498354448, 
+ "labels": [
+  {
+   "percentileHistogramBytes": [], 
+   "errors": [], 
+   "name": "ALL", 
+   "interval": 1, 
+   "otherErrorsCount": 0, 
+   "n": 1282, 
+   "percentileHistogramLatency": [], 
+   "intervals": [
+    {
+     "by": {
+  
+[2018-08-14 15:34:18,121 DEBUG urllib3.connectionpool] https://data.blazemeter.com:443 "POST /submit.php?session_id=r-ext5b733c4aaf2dc&signature=ci1leHQ1YjczM2M0YWFmMmRjOjE1MzU0ODgzMzA6MmM3MTAzMmFmYTFiMjc2YTI1ZWFhMGI3MDFiOTc0YjBkY2FhYjNiMTA0ZjVkMDkyNDdkMzVlYzM3OWE1ZDg1MjE4YWE4MjZkNjkyMDg1N2E0ZDlkNjQzMWRjOWIzOTc3NWZhOWI1M2RjYzJhMTY4Y2IwNWYyOWM1MDMyNDk3NTE=&test_id=5980626&user_id=399353&pq=0&target=labels_bulk&update=1 HTTP/1.1" 200 142
+[2018-08-14 15:34:18,122 DEBUG User] Response [200]: {"api_version":2,"error":null,"result":{"session":{"_id":"r-ext5b733c4aaf2dc","name":"Taurus Test","statusCode":100,"status":"INITIALIZING"}}}
+[2018-08-14 15:34:18,136 DEBUG User] Request: POST https://data.blazemeter.com/api/v4/image/r-ext5b733c4aaf2dc/files?signature=ci1leHQ1YjczM2M0YWFmMmRjOjE1MzU0ODgzMzA6MmM3MTAzMmFmYTFiMjc2YTI1ZWFhMGI3MDFiOTc0YjBkY2FhYjNiMTA0ZjVkMDkyNDdkMzVlYzM3OWE1ZDg1MjE4YWE4MjZkNjkyMDg1N2E0ZDlkNjQzMWRjOWIzOTc3NWZhOWI1M2RjYzJhMTY4Y2IwNWYyOWM1MDMyNDk3NTE= --===============7443915183058525812==
+Content-Disposition: file; name="file"; filename="r-ext5b733c4aaf2dc-0-c.monitoring.json"
+Content-Type: application/json
+
+{
+ "kpis": {
+  "Connections": "Connections", 
+  "CPU": "CPU", 
+  "Network I/O": "Network I/
+[2018-08-14 15:34:18,451 DEBUG urllib3.connectionpool] https://data.blazemeter.com:443 "POST /api/v4/image/r-ext5b733c4aaf2dc/files?signature=ci1leHQ1YjczM2M0YWFmMmRjOjE1MzU0ODgzMzA6MmM3MTAzMmFmYTFiMjc2YTI1ZWFhMGI3MDFiOTc0YjBkY2FhYjNiMTA0ZjVkMDkyNDdkMzVlYzM3OWE1ZDg1MjE4YWE4MjZkNjkyMDg1N2E0ZDlkNjQzMWRjOWIzOTc3NWZhOWI1M2RjYzJhMTY4Y2IwNWYyOWM1MDMyNDk3NTE= HTTP/1.1" 200 115
+[2018-08-14 15:34:18,452 DEBUG User] Response [200]: {
+    "api_version": 4,
+    "error": null,
+    "result": [
+        "r-ext5b733c4aaf2dc-0-c.monitoring.json"
+    ]
+}
+[2018-08-14 15:34:18,497 INFO Engine.blazemeter] Uploading all artifacts as artifacts.zip ...
+[2018-08-14 15:34:18,497 DEBUG User] Request: POST https://data.blazemeter.com/api/v4/image/r-ext5b733c4aaf2dc/files?signature=ci1leHQ1YjczM2M0YWFmMmRjOjE1MzU0ODgzMzA6MmM3MTAzMmFmYTFiMjc2YTI1ZWFhMGI3MDFiOTc0YjBkY2FhYjNiMTA0ZjVkMDkyNDdkMzVlYzM3OWE1ZDg1MjE4YWE4MjZkNjkyMDg1N2E0ZDlkNjQzMWRjOWIzOTc3NWZhOWI1M2RjYzJhMTY4Y2IwNWYyOWM1MDMyNDk3NTE= --===============7745850506665174477==
+Content-Disposition: file; name="file"; filename="artifacts.zip"
+Content-Type: application/zip
+
+PK    ü{M5-à   À     merged.jsonP»N1ìýÖ–ˆãE¾ÑP >ß’ìÛcmK	Ñý;~
+!QàÂ²fÆ³3{¼ÆE±!{yRÂ¤¼Ñƒ×lÖÐ0	ŒŸ}È
+[2018-08-14 15:34:18,942 DEBUG urllib3.connectionpool] https://data.blazemeter.com:443 "POST /api/v4/image/r-ext5b733c4aaf2dc/files?signature=ci1leHQ1YjczM2M0YWFmMmRjOjE1MzU0ODgzMzA6MmM3MTAzMmFmYTFiMjc2YTI1ZWFhMGI3MDFiOTc0YjBkY2FhYjNiMTA0ZjVkMDkyNDdkMzVlYzM3OWE1ZDg1MjE4YWE4MjZkNjkyMDg1N2E0ZDlkNjQzMWRjOWIzOTc3NWZhOWI1M2RjYzJhMTY4Y2IwNWYyOWM1MDMyNDk3NTE= HTTP/1.1" 200 90
+[2018-08-14 15:34:18,943 DEBUG User] Response [200]: {
+    "api_version": 4,
+    "error": null,
+    "result": [
+        "artifacts.zip"
+    ]
+}
+[2018-08-14 15:34:18,943 DEBUG User] Request: POST https://data.blazemeter.com/api/v4/image/r-ext5b733c4aaf2dc/files?signature=ci1leHQ1YjczM2M0YWFmMmRjOjE1MzU0ODgzMzA6MmM3MTAzMmFmYTFiMjc2YTI1ZWFhMGI3MDFiOTc0YjBkY2FhYjNiMTA0ZjVkMDkyNDdkMzVlYzM3OWE1ZDg1MjE4YWE4MjZkNjkyMDg1N2E0ZDlkNjQzMWRjOWIzOTc3NWZhOWI1M2RjYzJhMTY4Y2IwNWYyOWM1MDMyNDk3NTE= --===============6324626148622424080==
+Content-Disposition: file; name="file"; filename="artifacts.zip.tail.bz"
+Content-Type: application/x-bzip
+
+508  basic_script.yml
+30K bzt.log
+6K effective.json
+4K effective.yml
+83  error.jtl
+444  jmeter-bzt.propert
+[2018-08-14 15:34:19,286 DEBUG urllib3.connectionpool] https://data.blazemeter.com:443 "POST /api/v4/image/r-ext5b733c4aaf2dc/files?signature=ci1leHQ1YjczM2M0YWFmMmRjOjE1MzU0ODgzMzA6MmM3MTAzMmFmYTFiMjc2YTI1ZWFhMGI3MDFiOTc0YjBkY2FhYjNiMTA0ZjVkMDkyNDdkMzVlYzM3OWE1ZDg1MjE4YWE4MjZkNjkyMDg1N2E0ZDlkNjQzMWRjOWIzOTc3NWZhOWI1M2RjYzJhMTY4Y2IwNWYyOWM1MDMyNDk3NTE= HTTP/1.1" 200 98
+[2018-08-14 15:34:19,286 DEBUG User] Response [200]: {
+    "api_version": 4,
+    "error": null,
+    "result": [
+        "artifacts.zip.tail.bz"
+    ]
+}
+[2018-08-14 15:34:19,287 INFO Engine.blazemeter] Uploading /Users/panja09/OneDrive - CA Technologies/Taurus/2018-08-14_15-31-56.123894/bzt.log
+[2018-08-14 15:34:19,287 DEBUG User] Request: POST https://data.blazemeter.com/api/v4/image/r-ext5b733c4aaf2dc/files?signature=ci1leHQ1YjczM2M0YWFmMmRjOjE1MzU0ODgzMzA6MmM3MTAzMmFmYTFiMjc2YTI1ZWFhMGI3MDFiOTc0YjBkY2FhYjNiMTA0ZjVkMDkyNDdkMzVlYzM3OWE1ZDg1MjE4YWE4MjZkNjkyMDg1N2E0ZDlkNjQzMWRjOWIzOTc3NWZhOWI1M2RjYzJhMTY4Y2IwNWYyOWM1MDMyNDk3NTE= --===============2947924126366048633==
+Content-Disposition: file; name="file"; filename="bzt.log"
+Content-Type: text/plain
+
+[2018-08-14 15:31:56,082 INFO root] Taurus CLI Tool v1.11.1
+[2018-08-14 15:31:56,083 DEBUG root] Command-line options: {'verbose
+[2018-08-14 15:34:19,603 DEBUG urllib3.connectionpool] https://data.blazemeter.com:443 "POST /api/v4/image/r-ext5b733c4aaf2dc/files?signature=ci1leHQ1YjczM2M0YWFmMmRjOjE1MzU0ODgzMzA6MmM3MTAzMmFmYTFiMjc2YTI1ZWFhMGI3MDFiOTc0YjBkY2FhYjNiMTA0ZjVkMDkyNDdkMzVlYzM3OWE1ZDg1MjE4YWE4MjZkNjkyMDg1N2E0ZDlkNjQzMWRjOWIzOTc3NWZhOWI1M2RjYzJhMTY4Y2IwNWYyOWM1MDMyNDk3NTE= HTTP/1.1" 200 84
+[2018-08-14 15:34:19,603 DEBUG User] Response [200]: {
+    "api_version": 4,
+    "error": null,
+    "result": [
+        "bzt.log"
+    ]
+}
+[2018-08-14 15:34:19,603 DEBUG User] Request: POST https://data.blazemeter.com/api/v4/image/r-ext5b733c4aaf2dc/files?signature=ci1leHQ1YjczM2M0YWFmMmRjOjE1MzU0ODgzMzA6MmM3MTAzMmFmYTFiMjc2YTI1ZWFhMGI3MDFiOTc0YjBkY2FhYjNiMTA0ZjVkMDkyNDdkMzVlYzM3OWE1ZDg1MjE4YWE4MjZkNjkyMDg1N2E0ZDlkNjQzMWRjOWIzOTc3NWZhOWI1M2RjYzJhMTY4Y2IwNWYyOWM1MDMyNDk3NTE= --===============3259764973715451915==
+Content-Disposition: file; name="file"; filename="bzt.log.tail.bz"
+Content-Type: application/x-bzip
+
+[2018-08-14 15:34:18,452 DEBUG User] Response [200]: {
+    "api_version": 4,
+    "error": null,
+    "result": [
+
+[2018-08-14 15:34:19,895 DEBUG urllib3.connectionpool] https://data.blazemeter.com:443 "POST /api/v4/image/r-ext5b733c4aaf2dc/files?signature=ci1leHQ1YjczM2M0YWFmMmRjOjE1MzU0ODgzMzA6MmM3MTAzMmFmYTFiMjc2YTI1ZWFhMGI3MDFiOTc0YjBkY2FhYjNiMTA0ZjVkMDkyNDdkMzVlYzM3OWE1ZDg1MjE4YWE4MjZkNjkyMDg1N2E0ZDlkNjQzMWRjOWIzOTc3NWZhOWI1M2RjYzJhMTY4Y2IwNWYyOWM1MDMyNDk3NTE= HTTP/1.1" 200 92
+[2018-08-14 15:34:19,896 DEBUG User] Response [200]: {
+    "api_version": 4,
+    "error": null,
+    "result": [
+        "bzt.log.tail.bz"
+    ]
+}
+[2018-08-14 15:34:19,896 DEBUG Engine.blazemeter] Set last check time to: 1534278725.03
+[2018-08-14 15:34:19,896 INFO Engine.blazemeter] Ending data feeding...
+[2018-08-14 15:34:19,897 DEBUG User] Request: POST https://a.blazemeter.com/api/v4/sessions/r-ext5b733c4aaf2dc/stop None
+[2018-08-14 15:34:20,085 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "POST /api/v4/sessions/r-ext5b733c4aaf2dc/stop HTTP/1.1" 202 69
+[2018-08-14 15:34:20,086 DEBUG User] Response [202]: {
+    "api_version": 4,
+    "error": null,
+    "result": "Stopping"
+}
+[2018-08-14 15:34:20,086 INFO Engine.blazemeter] Online report link: https://a.blazemeter.com/app/#/masters/18083605
+[2018-08-14 15:34:20,088 DEBUG Engine.Configuration] Dumping YAML config into /Users/panja09/OneDrive - CA Technologies/Taurus/2018-08-14_15-31-56.123894/effective.yml
+[2018-08-14 15:34:20,107 DEBUG Engine.Configuration] Dumping JSON config into /Users/panja09/OneDrive - CA Technologies/Taurus/2018-08-14_15-31-56.123894/effective.json
+[2018-08-14 15:34:20,109 INFO root] Artifacts dir: /Users/panja09/OneDrive - CA Technologies/Taurus/2018-08-14_15-31-56.123894
+[2018-08-14 15:34:20,109 INFO root] Done performing with code: 0
+[2018-08-14 15:34:20,109 DEBUG root] Closing log handler: /Users/panja09/OneDrive - CA Technologies/Taurus/2018-08-14_15-31-56.123894/bzt.log
